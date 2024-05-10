@@ -4464,5 +4464,93 @@
       "capital": "minor", 
       "population": "", 
       "population_proper": ""
-    }
+    },
+    {
+        "city": "Villupuram",
+        "lat": "11.9443",
+        "lng": "79.4917",
+        "country": "India",
+        "iso2": "IN",
+        "admin_name": "Tamil Nadu",
+        "capital": "minor",
+        "population": "",
+        "population_proper": ""
+      },
+  {
+    "city": "Tiruchirappalli",
+    "lat": "10.7905",
+    "lng": "78.7047",
+    "country": "India",
+    "iso2": "IN",
+    "admin_name": "Tamil Nadu",
+    "capital": "minor",
+    "population": "1000000",
+    "population_proper": "847387"
+  },
+  {
+    "city": "Tiruppur",
+    "lat": "11.1085",
+    "lng": "77.3411",
+    "country": "India",
+    "iso2": "IN",
+    "admin_name": "Tamil Nadu",
+    "capital": "",
+    "population": "444352",
+    "population_proper": "444352"
+  },
+  {
+    "city": "Vellore",
+    "lat": "12.9165",
+    "lng": "79.1325",
+    "country": "India",
+    "iso2": "IN",
+    "admin_name": "Tamil Nadu",
+    "capital": "",
+    "population": "453425",
+    "population_proper": "453425"
+  },
+  {
+    "city": "Tambaram",
+    "lat": "12.9229",
+    "lng": "80.1275",
+    "country": "India",
+    "iso2": "IN",
+    "admin_name": "Tamil Nadu",
+    "capital": "",
+    "population": "174787",
+    "population_proper": "174787"
+  },
+  {
+    "city": "Karur",
+    "lat": "10.9354",
+    "lng": "78.0838",
+    "country": "India",
+    "iso2": "IN",
+    "admin_name": "Tamil Nadu",
+    "capital": "",
+    "population": "76915",
+    "population_proper": "76915"
+  },
+  {
+    "city": "Nagercoil",
+    "lat": "8.1804",
+    "lng": "77.4344",
+    "country": "India",
+    "iso2": "IN",
+    "admin_name": "Tamil Nadu",
+    "capital": "",
+    "population": "224329",
+    "population_proper": "213858"
+  },
+  {
+    "city": "Trichy",
+    "lat": "10.7905",
+    "lng": "78.7047",
+    "country": "India",
+    "iso2": "IN",
+    "admin_name": "Tamil Nadu",
+    "capital": "minor",
+    "population": "1000000",
+    "population_proper": "847387"
+  }
   ]
