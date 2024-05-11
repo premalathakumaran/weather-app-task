@@ -8,9 +8,13 @@ In the project directory, you can run:
 
 ⚙️ Tech Stack
 React
+
 Jvascript
+
 HTML
+
 CSS
+
 
 
 ### `npm start`
