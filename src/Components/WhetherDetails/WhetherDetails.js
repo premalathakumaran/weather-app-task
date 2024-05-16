@@ -14,7 +14,7 @@ function WhetherDetails() {
   const [searchParams] = useSearchParams();
   // const { fetchData } = useFetchWeather();
   const {
-    state: { city },
+    // state: { city },
     dispatch,
   } = UseWeatherAppContext();
 

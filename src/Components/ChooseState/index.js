@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
-import states from "../../Data/in.json";
+import React, { useState } from "react";
+// import states from "../../Data/in.json";
 
-import axios from "axios";
+// import axios from "axios";
 
 import { UseWeatherAppContext } from "../../Context/Context";
 import StateComponent from "../statelist/StateComponent";
@@ -102,9 +102,9 @@ const ChooseStateComponents = () => {
   ];
 
   const handleChange = (e) => {
-    if (e.target.value != "Select State") {
+    if (e.target.value !== "Select State") {
       const districtList = states.filter((item) => {
-        if (item.name == e.target.value) {
+        if (item.name === e.target.value) {
           return item.district;
         }
       })[0].district;

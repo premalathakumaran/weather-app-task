@@ -1,8 +1,8 @@
 import React from 'react';
-import WeekInfoCardComponents from './WeekInfoCard';
+//import WeekInfoCardComponents from './WeekInfoCard';
 import ChooseStateComponents from './ChooseState';
-import HumidityComponents from './HUMIDITY';
-import LeftComponents from './Left';
+//import HumidityComponents from './HUMIDITY';
+// import LeftComponents from './Left';
 const HomeComponents = ()=>{   
     return (
         <>
