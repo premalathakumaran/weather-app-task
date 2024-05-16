@@ -5,7 +5,7 @@ import { UseWeatherAppContext } from "../../Context/Context";
 function StateComponent({ stateName, dristric }) {
   const navigate = useNavigate();
   const {
-    state: { city },
+    // state: { city },
     dispatch,
   } = UseWeatherAppContext();
   const handleNavigation = () => {
