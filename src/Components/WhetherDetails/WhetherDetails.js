@@ -48,7 +48,7 @@ function WhetherDetails() {
   try {
     useEffect(() => {
       getweatherinfo();
-    }, []);
+    }, );
   } catch (err) {
     console.log(err);
   }
