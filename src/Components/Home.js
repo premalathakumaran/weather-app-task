@@ -8,11 +8,11 @@ const HomeComponents = ()=>{
         <>
             <div className='homeWrap'>
                 <div className='weatherSection'>
-                    <LeftComponents />
+                    {/* <LeftComponents /> */}
                     <div className='rightSide'>
                         <ChooseStateComponents />
-                        <WeekInfoCardComponents />
-                        <HumidityComponents />
+                        {/* <WeekInfoCardComponents />
+                        <HumidityComponents /> */}
                     </div>
                 </div>
             </div>

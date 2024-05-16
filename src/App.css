@@ -36,11 +36,11 @@
 }
 .rightSide{
   color: #000;
-    position: relative;
+  position: relative;
     float: left;
     height: 100%;
-    padding-top: 25px;
-    padding-right: 20px;
+    /* padding-top: 1px;
+    padding-right: 1px; */
 }
 .stateMenu{
   outline: none;
@@ -48,7 +48,7 @@
     box-sizing: border-box;
     border: none;
     border-radius: 25px;
-    padding: 10px;
+    padding: 5px;
     color: #000;
     font-weight: 700;
     box-shadow: 0 0 30px -5px #00000040;
@@ -56,6 +56,31 @@
     transition: transform .2s ease;
     transition: transform .2s ease,-webkit-transform .2s ease;
 }
+
+.stateMenus {
+  padding-top: 28px; /* Top padding of 28px */
+  padding-right: 122px; /* Right padding of 12px */
+  padding-bottom: 15px; /* Bottom padding of 28px */
+  padding-left: 12px; 
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  margin: 0 auto; /* Center horizontally */
+  display: block; /* Ensure it spans the full width */
+  width: fit-content; 
+}
+
+.stateMenus:hover {
+  border-color: #999;
+}
+
+.stateMenus:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
 
 .humidityWrap{
   padding: 15px;
@@ -161,4 +186,65 @@
   h2{margin: 0;}
   .rightSide{padding-left:25px;}
   .cardWrap{margin-top: 20px;padding-top:10px;padding-bottom:10px;}
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-info {
+  color: #fff;
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+}
+
+.btn-info:hover {
+  color: #fff;
+  background-color: #138496;
+  border-color: #117a8b;
+}
+
+.btn-info:focus, .btn-info.focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.btn-info.disabled, .btn-info:disabled {
+  color: #fff;
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+}
+
+.btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active,
+.show > .btn-info.dropdown-toggle {
+  color: #fff;
+  background-color: #117a8b;
+  border-color: #10707f;
+}
+
+.btn-info:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):not(.disabled).active:focus,
+.show > .btn-info.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.stateWrap {
+  /* margin-top: px;  */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Optional: If you want to style the child elements within stateWrap */
+.stateWrap > * {
+  margin-bottom: 10px; /* Adjust margin between child elements as needed */
 }
