@@ -1,22 +1,18 @@
 import React, { useEffect } from "react";
-import { useSearchParams } from "react-router-dom";
+// import { useSearchParams } from "react-router-dom";
 import LeftComponents from "../Left";
 import WeekInfoCardComponents from "../WeekInfoCard";
 import HumidityComponents from "../HUMIDITY";
 
-import { UseWeatherAppContext } from "../../Context/Context";
-import { useLocation } from "react-router-dom";
-import axios from "axios";
+// import { UseWeatherAppContext } from "../../Context/Context";
+import useGetWeatherInfo from "../../hooks/useGetWeatherInfo";
+
 
 
 function WhetherDetails() {
-  const {state} = useLocation();
-  const [searchParams] = useSearchParams();
-  // const { fetchData } = useFetchWeather();
-  const {
-    // state: { city },
-    dispatch,
-  } = UseWeatherAppContext();
+  const getweatherinfo = useGetWeatherInfo();
+  // const [searchParams] = useSearchParams();
+ 
 
   // const selectedCity = {
   //   city: "Villupuram",
@@ -30,28 +26,17 @@ function WhetherDetails() {
   //   population_proper: "240000",
   // };
 
-  const getweatherinfo = async () => {
-    console.log(state,"state");
-    const APIKEY = "34480b98aa332da53123a0ac63a4ea9d";
-    let lat = state && state.lat ? state.lat : "";
-    let long = state && state.long ? state.long : "";
-    let exclude = "hourly,minutely";
-    const ULR = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&exclude=${exclude}&units=metric&lang=tr&appid=${APIKEY}`;
-    const data = await axios.get(ULR)
-    let _daily = data.data.daily;
-    dispatch({
-      type: "SET_DAILY",
-      payload: _daily,
-    });
-    console.log(data)
-  };
-  try {
-    useEffect(() => {
-      getweatherinfo();
-    }, []);
-  } catch (err) {
-    console.log(err);
-  }
+ 
+  useEffect(() => {
+    getweatherinfo();
+  },[getweatherinfo]);
+  // try {
+  //   useEffect(() => {
+  //     getweatherinfo();
+  //   }, );
+  // } catch (err) {
+  //   console.log(err);
+  // }
 
   // useEffect(() => {
   //   // //console.log('selectedCity', selectedCity);

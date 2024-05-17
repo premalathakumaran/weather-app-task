@@ -6,12 +6,8 @@ import React, { useState } from "react";
 import { UseWeatherAppContext } from "../../Context/Context";
 import StateComponent from "../statelist/StateComponent";
 
-
 const ChooseStateComponents = () => {
-  const {
-    state: { city },
-    dispatch,
-  } = UseWeatherAppContext();
+  const { dispatch } = UseWeatherAppContext();
   const [districts, setDristricts] = useState([]);
 
   const states = [
@@ -103,11 +99,10 @@ const ChooseStateComponents = () => {
 
   const handleChange = (e) => {
     if (e.target.value !== "Select State") {
-      const districtList = states.filter((item) => {
-        if (item.name === e.target.value) {
-          return item.district;
-        }
-      })[0].district;
+      const districtList = states.filter(
+        (item) => item.name === e.target.value
+      )[0].district;
+
       console.log("districtList", districtList);
       setDristricts(districtList);
       // debugger;
@@ -123,13 +118,6 @@ const ChooseStateComponents = () => {
       });
     }
   };
-
-  // API VAR
-  const APIKEY = "34480b98aa332da53123a0ac63a4ea9d";
-  let lat = city && city.lat ? city.lat : "";
-  let long = city && city.lng ? city.lng : "";
-  let exclude = "hourly,minutely";
-  const ULR = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&exclude=${exclude}&units=metric&lang=tr&appid=${APIKEY}npm`;
 
   // const { fetchData } = useFetchWeather();
 
@@ -150,10 +138,7 @@ const ChooseStateComponents = () => {
             states.length > 0 &&
             states.map((state) => {
               return (
-                <option
-                  key={`${states.population}${states.lat}`}
-                  value={states.tamilnadu}
-                >
+                <option key={states.tamilnadu} value={states.tamilnadu}>
                   {state.name}
                 </option>
               );

@@ -1,7 +1,7 @@
 import "./App.css";
 import HomeComponents from "./Components/Home";
 import WhetherDetails from "./Components/WhetherDetails/WhetherDetails";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
