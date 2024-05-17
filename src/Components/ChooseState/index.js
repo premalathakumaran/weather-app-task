@@ -129,7 +129,7 @@ const ChooseStateComponents = () => {
   let lat = city && city.lat ? city.lat : "";
   let long = city && city.lng ? city.lng : "";
   let exclude = "hourly,minutely";
-  const ULR = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&exclude=${exclude}&units=metric&lang=tr&appid=${APIKEY}`;
+  const ULR = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&exclude=${exclude}&units=metric&lang=tr&appid=${APIKEY}npm`;
 
   // const { fetchData } = useFetchWeather();
 

@@ -48,7 +48,7 @@ function WhetherDetails() {
   try {
     useEffect(() => {
       getweatherinfo();
-    }, );
+    }, []);
   } catch (err) {
     console.log(err);
   }
@@ -76,3 +76,18 @@ function WhetherDetails() {
 }
 
 export default WhetherDetails;
+
+
+
+
+
+
+
+
+
+
+
+//  5b692784c8c84c2f46e5d826ed39b860
+
+
+//   https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${APIKEY}
